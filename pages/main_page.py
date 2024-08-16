@@ -26,3 +26,8 @@ class MainPage(BasePage):
         alert = self.browser.switch_to.alert
         alert.accept()
 
+    def push_add_button(self):
+        button = self.browser.find_element(By.CLASS_NAME,'btn-lg')
+        button.click()
+        
+
